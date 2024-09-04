@@ -1,0 +1,64 @@
+/* src/components/WelcomeContainer.css */
+
+/* Mobile-first styles */
+.welcome-container {
+    text-align: center;
+    background-image: url('/public/welcome-1.jpeg');
+    background-size: cover;
+    background-position: bottom;
+    width: 100vw;
+    height: 120vh;
+    padding: 0 30px 30px 30px; /* Padding around the container */
+}
+  
+  .welcome-container-title {
+    font-size: 1.8em; /* Smaller font size for mobile */
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .welcome-container-date {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-container-location {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .welcome-container-message {
+    font-size: 0.9em;
+    color: #444;
+    line-height: 1.4;
+    max-width: 100%; /* Full width for mobile */
+    margin: 0 auto;
+  }
+  
+  /* Desktop and above */
+  @media (min-width: 1024px) {
+    /* .welcome-container {
+      margin-bottom: 40px;
+    } */
+  
+    .welcome-container-title {
+      font-size: 2.5em; /* Larger font size for desktops */
+      padding: 0;
+      margin: 0;
+    }
+  
+    .welcome-container-date {
+      font-size: 1.7em;
+    }
+  
+    .welcome-container-location {
+      font-size: 1.5em;
+    }
+  
+    .welcome-container-message {
+      font-size: 1.1em;
+      max-width: 70%; /* Restrict width further on larger screens */
+    }
+  }

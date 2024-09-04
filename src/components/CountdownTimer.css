@@ -1,0 +1,22 @@
+.countdown-container {
+    display: flex;
+    gap: 16px;
+    margin: auto;
+    justify-content: center;
+}
+
+.countdown-container span {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.countdown-timer {
+    margin-top: 40px;
+}
+
+.countdown-timer-title {
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--primary-color);
+  }

@@ -1,0 +1,34 @@
+/* src/components/WelcomeContainer.css */
+
+/* Mobile-first styles */
+.welcome-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.welcome-content-sub-title {
+  font-family: var(--heading-font-family);
+  font-style: var(--heading-font-style);
+  font-size: 2em; /* Smaller font size for mobile */
+}
+
+.welcome-content-main-title {
+  font-family: var(--heading-font-family);
+  font-style: var(--heading-font-style);
+  font-size: 10em; /* Smaller font size for mobile */
+  letter-spacing: 0.1em;
+  margin-top: 40px;
+}
+
+.welcome-content-date {
+  font-family: var(--heading-font-family);
+  font-style: var(--heading-font-style);
+  font-size: 2.5em; /* Smaller font size for mobile */
+}
+  
+  /* Desktop and above */
+  /* @media (min-width: 1024px) {
+
+  } */

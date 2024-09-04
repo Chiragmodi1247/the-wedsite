@@ -1,0 +1,64 @@
+/* src/components/Header.css */
+
+/* Mobile-first styles */
+.header-container {
+    padding: 10px 20px; /* Padding around the container */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .navbar-left-corner {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .navbar-left-corner p {
+    border: none;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  
+  .navbar-center {
+    width: 100%;
+  }
+
+  .navbar-center img {
+    max-width: 100px;
+    margin: auto;
+  }
+
+  .navbar-right-corner {
+    width: 100%;
+  }
+  
+  .rsvp-button {
+    float: right;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+  
+  /* Tablet and above */
+  @media (min-width: 768px) {
+    .navbar {
+      flex-direction: row; /* Stack elements vertically */
+    }
+  
+    .nav-buttons {
+      margin-bottom: 20px; /* Space below nav buttons */
+    }
+  
+    .cta-button {
+      align-self: flex-end; /* Align the button to the right */
+    }
+  }

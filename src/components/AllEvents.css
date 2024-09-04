@@ -1,0 +1,17 @@
+/* src/components/AllEvents.css */
+
+.all-events {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 16px;
+    background-color: skyblue;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .all-events {
+      gap: 48px;
+      padding: 24px;
+    }
+  }
