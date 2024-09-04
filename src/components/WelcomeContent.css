@@ -17,9 +17,9 @@
 .welcome-content-main-title {
   font-family: var(--heading-font-family);
   font-style: var(--heading-font-style);
-  font-size: 10em; /* Smaller font size for mobile */
-  letter-spacing: 0.1em;
+  font-size: 2.5em;
   margin-top: 40px;
+  letter-spacing: 0.1em;
 }
 
 .welcome-content-date {
@@ -28,7 +28,8 @@
   font-size: 2.5em; /* Smaller font size for mobile */
 }
   
-  /* Desktop and above */
-  /* @media (min-width: 1024px) {
-
-  } */
+@media (min-width: 768px) {
+  .welcome-content-main-title {
+    font-size: 8em;
+  }
+}

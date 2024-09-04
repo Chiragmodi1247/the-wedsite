@@ -5,6 +5,8 @@
     padding: 10px 20px; /* Padding around the container */
   }
   
+
+
   .navbar {
     display: flex;
     justify-content: space-between; /* Space between items */
@@ -13,19 +15,20 @@
   }
   
   .navbar-left-corner {
-    display: flex;
-    gap: 20px;
-    width: 100%;
+    display: none;
   }
-  
-  .navbar-left-corner p {
-    border: none;
-    font-size: 1.2em;
-    color: white;
-    cursor: pointer;
-    font-weight: 700;
+  .navbar-right-corner {
+      display: none;
   }
-  
+
+  .nav-buttons {
+    margin-bottom: 20px; /* Space below nav buttons */
+  }
+
+  .cta-button {
+    align-self: flex-end; /* Align the button to the right */
+  }
+
   .navbar-center {
     width: 100%;
   }
@@ -35,10 +38,6 @@
     margin: auto;
   }
 
-  .navbar-right-corner {
-    width: 100%;
-  }
-  
   .rsvp-button {
     float: right;
     color: white;
@@ -48,17 +47,30 @@
     font-weight: 700;
   }
   
-  /* Tablet and above */
   @media (min-width: 768px) {
     .navbar {
-      flex-direction: row; /* Stack elements vertically */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
-  
-    .nav-buttons {
-      margin-bottom: 20px; /* Space below nav buttons */
-    }
-  
-    .cta-button {
-      align-self: flex-end; /* Align the button to the right */
-    }
+    .navbar-left-corner {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+      }
+      
+      .navbar-left-corner p {
+        border: none;
+        font-size: 1.2em;
+        color: white;
+        cursor: pointer;
+        font-weight: 700;
+      }
+
+      .navbar-right-corner {
+        width: 100%;
+        display: block;
+      }
+      
+
   }

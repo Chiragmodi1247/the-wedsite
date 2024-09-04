@@ -16,7 +16,22 @@
 }
 
 .countdown-timer-title {
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 700;
     color: var(--primary-color);
+  }
+
+  @media (min-width: 768px) {
+    .countdown-container {
+      gap: 32px;
+    }
+  
+    .countdown-container span {
+      font-size: 3em;
+    }
+  
+    .countdown-timer-title {
+      font-size: 2em;
+    }
+    
   }

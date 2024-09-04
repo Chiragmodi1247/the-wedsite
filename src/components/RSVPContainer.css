@@ -1,14 +1,13 @@
 /* src/components/RSVPContainer.css */
 
 .rsvp-container {
-    padding-top: 16px;
     margin: auto;
     width: 100%;
     text-align: center;
     background-image: url('/public/fifth.jpg');
   }
   .rsvp-container-title {
-    font-size: 3em;
+    display: none;
   }
   
   
@@ -17,5 +16,9 @@
     .rsvp-container {
       padding-top: 40px;
       width: 100%;
+    }
+    .rsvp-container-title {
+      display: block;
+      font-size: 3em;
     }
   }

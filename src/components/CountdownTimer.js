@@ -34,7 +34,7 @@ const CountdownTimer = () => {
 
   return (
     <div className="countdown-timer">
-      <p className='countdown-timer-title'>We are getting married in:</p>
+      <p className='countdown-timer-title'>We are getting married in</p>
       <Countdown date={weddingDate} renderer={renderer} />
     </div>
   );

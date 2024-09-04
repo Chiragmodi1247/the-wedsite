@@ -8,8 +8,8 @@ const AllEvents = () => {
     <section className="all-events">
       <Event
         title="Haldi Ceremony"
-        date="November 8, 2024"
-        time="10:00 AM"
+        date="November 16, 2024"
+        time="4:30 PM"
         locationMap="https://maps.google.com"
         location="Modheswari bhavan, Pethapur - Randheja Rd, Gandhinagar, Gujarat 382610"
         invitationText="Join us for the Haldi ceremony to bless the couple."
@@ -18,9 +18,9 @@ const AllEvents = () => {
         // anyNotes="Wear yellow for this event."
       />
       <Event
-        title="Sangeet Night"
-        date="November 9, 2024"
-        time="7:00 PM"
+        title="Engagement & Sangeet Night"
+        date="November 16, 2024"
+        time="8:00 PM"
         locationMap="https://maps.google.com"
         location="Moonlight Ballroom, Downtown"
         invitationText="Dance the night away at our Sangeet celebration."
@@ -29,8 +29,8 @@ const AllEvents = () => {
       />
       <Event
         title="Wedding Ceremony"
-        date="November 10, 2024"
-        time="5:00 PM"
+        date="November 17, 2024"
+        time="5:30 PM"
         locationMap="https://maps.google.com"
         location="The Grand Venue, City"
         invitationText="Celebrate the union of love and commitment."
