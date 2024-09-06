@@ -2,8 +2,33 @@
 import React from 'react';
 import Event from './Event';
 import './AllEvents.css';
+import { useIsMobile } from '../utils/hooks';
 
 const AllEvents = () => {
+  const isMobile = useIsMobile();
+  
+  const getImagePath = (event) => {
+    let EVENT_TO_IMAGE_MAP = {
+      'haldi': {
+        mobile: '/haldi-mobile.jpg',
+        desktop: '/haldi-desktop.jpg'
+      },
+      'sangeet': {
+        mobile: '/sangeet-mobile.jpg',
+        desktop: '/sangeet-desktop.jpeg'
+      },
+      'wedding': {
+        mobile: '/wedding-mobile.jpg',
+        desktop: '/wedding-desktop.jpeg'
+      }
+    }
+    if (isMobile) {
+      return EVENT_TO_IMAGE_MAP[event].mobile;
+    } else {
+      return EVENT_TO_IMAGE_MAP[event].desktop;
+    }
+  };
+
   return (
     <section className="all-events">
       <Event
@@ -14,8 +39,7 @@ const AllEvents = () => {
         location="Modheswari bhavan, Pethapur - Randheja Rd, Gandhinagar, Gujarat 382610"
         invitationText="Join us for the Haldi ceremony to bless the couple."
         imagePosition="right"
-        imagePath="/haldi-image.jpeg"
-        // anyNotes="Wear yellow for this event."
+        imagePath={getImagePath('haldi')}
       />
       <Event
         title="Engagement & Sangeet Night"
@@ -25,7 +49,7 @@ const AllEvents = () => {
         location="Moonlight Ballroom, Downtown"
         invitationText="Dance the night away at our Sangeet celebration."
         imagePosition="left"
-        imagePath="/sangeet-image.jpeg"
+        imagePath={getImagePath('sangeet')}
       />
       <Event
         title="Wedding Ceremony"
@@ -35,8 +59,7 @@ const AllEvents = () => {
         location="The Grand Venue, City"
         invitationText="Celebrate the union of love and commitment."
         imagePosition="right"
-        imagePath="/wedding-image.jpeg"
-        // anyNotes="Please arrive 15 minutes early."
+        imagePath={getImagePath('wedding')}
       />
     </section>
   );
