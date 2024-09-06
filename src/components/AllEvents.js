@@ -11,7 +11,7 @@ const AllEvents = () => {
     let EVENT_TO_IMAGE_MAP = {
       'haldi': {
         mobile: '/haldi-mobile.jpg',
-        desktop: '/haldi-desktop.jpg'
+        desktop: '/haldi-desktop.jpeg'
       },
       'sangeet': {
         mobile: '/sangeet-mobile.jpg',
