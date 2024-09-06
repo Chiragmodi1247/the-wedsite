@@ -3,7 +3,7 @@
 /* Mobile-first styles */
 .welcome-container {
     text-align: center;
-    background-image: url('/public/welcome-1.jpeg');
+    background-image: url('/public/welcome-mobile.jpeg');
     background-size: cover;
     background-position: bottom;
     width: 100vw;
@@ -39,9 +39,9 @@
   
   /* Desktop and above */
   @media (min-width: 1024px) {
-    /* .welcome-container {
-      margin-bottom: 40px;
-    } */
+    .welcome-container {
+        background-image: url('/public/welcome-desktop.jpeg');
+    }
   
     .welcome-container-title {
       font-size: 2.5em; /* Larger font size for desktops */
