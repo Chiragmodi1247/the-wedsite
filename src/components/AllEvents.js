@@ -30,7 +30,7 @@ const AllEvents = () => {
   };
 
   return (
-    <section className="all-events">
+    <section id="events" className="all-events">
       <Event
         title="Haldi Ceremony"
         date="November 16, 2024"

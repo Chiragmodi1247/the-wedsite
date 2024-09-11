@@ -1,0 +1,43 @@
+/* src/components/ThankYou.css */
+.thank-you-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8f9fa, #e2e2e2);
+  color: #333;
+  text-align: center;
+}
+
+.thank-you-header {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.thank-you-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.thank-you-message {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.thank-you-submessage {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  margin-top: 10px;
+}

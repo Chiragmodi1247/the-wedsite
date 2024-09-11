@@ -1,5 +1,6 @@
 // src/components/RSVPContainer.js
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   Box,
   Heading,
@@ -19,6 +20,7 @@ const RSVPForm = () => {
   const [attendance, setAttendance] = useState('yes');
   const [guests, setGuests] = useState(1);
   const [notes, setNotes] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -34,7 +36,7 @@ const RSVPForm = () => {
       };
 
       await submitRSVP(rsvpData);
-      // redirect to thank you page
+      navigate('/thank-you');
     } catch (error) {
       alert('My bad! Something went wrong. Please try again.');
     }
