@@ -3,7 +3,7 @@
 /* Base styles for mobile-first design */
 .event-container {
     display: flex;
-    color: #40292c;
+    color: #ffffff;
     flex-direction: column;
     align-items: center;
     padding: 16px;

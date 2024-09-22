@@ -1,76 +1,105 @@
-/* src/components/Header.css */
-
 /* Mobile-first styles */
 .header-container {
-    padding: 10px 20px; /* Padding around the container */
-  }
-  
+  padding: 10px 20px;
+  position: relative;
+}
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the logo */
+}
 
+/* Hamburger menu icon for mobile */
+.mobile-menu-icon {
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
+  position: absolute; /* Fixed position for hamburger */
+  top: 20px;
+  left: 0px;
+  z-index: 1000;
+}
+
+/* Centering the logo */
+.navbar-center {
+  text-align: center; /* Center the logo text */
+  flex-grow: 1; /* Allow the center to grow */
+}
+
+.navbar-center img {
+  max-width: 100px;
+  margin: auto;
+}
+
+.navbar-left-corner,
+.navbar-right-corner {
+  display: none; /* Hide on mobile */
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  position: fixed;
+  top: 0; /* Align to top */
+  left: -100%; /* Start off-screen */
+  width: 80%; /* Width of the menu */
+  height: 100%; /* Full height */
+  background-color: rgba(175, 175, 175, 0.9); /* Semi-transparent background */
+  color: white; /* Text color */
+  transition: left 0.3s ease; /* Smooth transition */
+  padding: 20px; /* Padding */
+}
+
+.mobile-menu p {
+  padding: 10px 0;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+/* Show mobile menu when triggered */
+.is-mobile-menu-open .mobile-menu {
+  display: flex; /* Use flex when open */
+  left: 0; /* Slide into view */
+  padding-top: 8vh;
+}
+
+/* Media Queries for larger screens */
+@media (min-width: 768px) {
   .navbar {
-    display: flex;
-    justify-content: space-between; /* Space between items */
-    align-items: center;
-    flex-direction: column;
+      flex-direction: row;
+      justify-content: space-between; /* Regular layout for larger screens */
   }
-  
+
   .navbar-left-corner {
-    display: none;
+      display: flex; /* Show nav items */
+      gap: 20px;
   }
+
+  .navbar-left-corner p {
+      font-size: 1.2em;
+      color: white;
+      cursor: pointer;
+      font-weight: 700;
+  }
+
   .navbar-right-corner {
+      display: flex; /* Show RSVP button */
+      justify-content: flex-end;
+      gap: 20px;
+  }
+
+  /* Hide the mobile menu icon on larger screens */
+  .mobile-menu-icon {
       display: none;
   }
 
-  .nav-buttons {
-    margin-bottom: 20px; /* Space below nav buttons */
+  /* Hide mobile menu on larger screens */
+  .mobile-menu {
+      display: none !important;
   }
-
-  .cta-button {
-    align-self: flex-end; /* Align the button to the right */
-  }
-
-  .navbar-center {
-    width: 100%;
-  }
-
-  .navbar-center img {
-    max-width: 100px;
-    margin: auto;
-  }
-
-  .rsvp-button {
-    float: right;
-    color: white;
-    cursor: pointer;
-    border: none;
-    font-size: 1.2em;
-    font-weight: 700;
-  }
-  
-  @media (min-width: 768px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .navbar-left-corner {
-        display: flex;
-        gap: 20px;
-        width: 100%;
-      }
-      
-      .navbar-left-corner p {
-        border: none;
-        font-size: 1.2em;
-        color: white;
-        cursor: pointer;
-        font-weight: 700;
-      }
-
-      .navbar-right-corner {
-        width: 100%;
-        display: block;
-      }
-      
-
-  }
+}

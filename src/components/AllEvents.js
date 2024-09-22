@@ -3,6 +3,7 @@ import React from 'react';
 import Event from './Event';
 import './AllEvents.css';
 import { useIsMobile } from '../utils/hooks';
+// import CountdownTimer from './CountdownTimer';
 
 const AllEvents = () => {
   const isMobile = useIsMobile();
@@ -31,6 +32,7 @@ const AllEvents = () => {
 
   return (
     <section id="events" className="all-events">
+      {/* <CountdownTimer /> */}
       <Event
         title="Haldi Ceremony"
         date="November 16, 2024"

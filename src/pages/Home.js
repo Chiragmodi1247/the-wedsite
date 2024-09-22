@@ -2,7 +2,6 @@
 import React from 'react';
 import WelcomeContainer from '../components/WelcomeContainer.js';
 import AllEvents from '../components/AllEvents.js';
-import RSVPContainer from '../components/RSVPContainer.js';
 import BackToTop from '../components/BackToTop';
 // import Instagram from './Instagram';
 // import Footer from './../components/Footer.js';
@@ -13,7 +12,6 @@ const Home = () => {
     <div className="home-container">
       <WelcomeContainer />
       <AllEvents />
-      <RSVPContainer />
       {/* <Instagram /> */}
       {/* <Footer /> */}
       <BackToTop />

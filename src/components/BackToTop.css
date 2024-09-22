@@ -1,8 +1,8 @@
 /* src/components/BackToTop.css */
 .back-to-top {
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 30px;
+    right: 20px;
     z-index: 1000;
   }
   

@@ -8,7 +8,7 @@
     background-position: bottom;
     width: 100vw;
     height: 120vh;
-    padding: 0 30px 30px 30px; /* Padding around the container */
+    padding: 0px 30px 30px 30px; /* Padding around the container */
 }
   
   .welcome-container-title {

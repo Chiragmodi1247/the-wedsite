@@ -11,6 +11,7 @@ import {
   Textarea,
   Button,
   Stack,
+  useMediaQuery
 } from '@chakra-ui/react';
 import { submitRSVP } from '../utils/firebaseUtils';
 
@@ -21,6 +22,8 @@ const RSVPForm = () => {
   const [guests, setGuests] = useState(1);
   const [notes, setNotes] = useState('');
   const navigate = useNavigate();
+
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -51,6 +54,7 @@ const RSVPForm = () => {
       borderRadius="lg"
       bg="white"
       boxShadow="lg"
+      m={isMobile ? "20px" : "0px"}
     >
       <Heading as="h2" size="lg" textAlign="center" mb={6}>
         RSVP
