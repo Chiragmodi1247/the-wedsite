@@ -11,7 +11,9 @@ const RSVPPage = () => {
         <HeaderContainer />
       </div>
       <p className="rsvp-container-title">We would love to see you at our wedding!</p>
-      <RSVPForm />
+      <div className='rsvp-page-form-container'>
+        <RSVPForm />
+      </div>
     </div>
   );
 };

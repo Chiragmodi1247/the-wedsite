@@ -54,7 +54,6 @@ const RSVPForm = () => {
       borderRadius="lg"
       bg="white"
       boxShadow="lg"
-      m={isMobile ? "20px" : "0px"}
     >
       <Heading as="h2" size="lg" textAlign="center" mb={6}>
         RSVP
