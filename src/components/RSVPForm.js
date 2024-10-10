@@ -10,8 +10,7 @@ import {
   Select,
   Textarea,
   Button,
-  Stack,
-  useMediaQuery
+  Stack
 } from '@chakra-ui/react';
 import { submitRSVP } from '../utils/firebaseUtils';
 
@@ -22,8 +21,6 @@ const RSVPForm = () => {
   const [guests, setGuests] = useState(1);
   const [notes, setNotes] = useState('');
   const navigate = useNavigate();
-
-  const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -39,7 +36,7 @@ const RSVPForm = () => {
       };
 
       await submitRSVP(rsvpData);
-      navigate('/thank-you');
+      navigate('/');
     } catch (error) {
       alert('My bad! Something went wrong. Please try again.');
     }
